@@ -1,0 +1,89 @@
+.header {
+  backdrop-filter: blur(54.20000076293945px);
+  background: rgba(46, 46, 46, 0.4);
+  padding-top: 15px;
+  padding-bottom: 16px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+  @include media(desktop) {
+    background: linear-gradient(180deg, #0b132b 0%, #000 100%);
+    padding-top: 26px;
+    padding-bottom: 0;
+  }
+}
+
+.header-container {
+}
+
+.header-bg-wrapper {
+  @include media(desktop) {
+    padding-top: 14px;
+    background-image: url(../img/hero/hero-bg-desk.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media(desktop) {
+    justify-content: start;
+    gap: 54px;
+  }
+}
+
+.header-logo-link {
+  @include media(desktop) {
+    margin-left: 24px;
+  }
+}
+
+.nav-list {
+  display: none;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 978px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #f1f5f9;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &.active {
+    color: #0ecbaf;
+  }
+}
+
+.nav-list-link.active {
+  color: #0ecbaf;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    display: none;
+  }
+}

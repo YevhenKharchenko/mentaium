@@ -1,0 +1,29 @@
+.privacy-header {
+  background: linear-gradient(180deg, #0b132b 0%, #000 100%);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+  @include media(desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.privacy-header-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #f1f5f9;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}

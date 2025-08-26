@@ -1,0 +1,106 @@
+.cookie-banner-section {
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: none;
+  z-index: 100;
+  display: none;
+
+  @include media(desktop) {
+    max-width: 1280px;
+    bottom: 60px;
+  }
+}
+
+.cookie-banner-content-wrapper {
+  background: linear-gradient(180deg, #0b132b 0%, #000 100%);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  padding: 45px 32px 60px 32px;
+  border-radius: 19px;
+
+  @include media(desktop) {
+    padding: 80px 109px 103px 109px;
+    max-width: 1440px;
+  }
+}
+
+.cookies-banner-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #f1f5f9;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 64px;
+    margin-bottom: 40px;
+  }
+}
+
+.cookie-banner-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #f1f5f9;
+  margin-bottom: 48px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    margin-bottom: 80px;
+  }
+}
+
+.cookie-banner-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    gap: 24px;
+  }
+}
+
+.cookie-banner-btn-wrapper {
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
+  width: 100%;
+  max-width: 150px;
+
+  @include media(desktop) {
+    max-width: 521px;
+  }
+}
+
+.cookie-btn {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #0b132b 0%, #000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 19px;
+  padding: 16px 0;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #f1f5f9;
+
+  @include media(desktop) {
+    padding: 15.5px 0;
+    font-size: 24px;
+  }
+}
+
+.show-cookie-banner {
+  display: block;
+}

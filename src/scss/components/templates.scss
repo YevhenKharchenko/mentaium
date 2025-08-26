@@ -1,0 +1,117 @@
+.templates-section {
+  padding-bottom: 100px;
+
+  @include media(desktop) {
+    padding-bottom: 200px;
+  }
+}
+
+.templates-subtitle {
+  margin-bottom: 24px;
+  max-width: 311px;
+
+  @include media(desktop) {
+    margin-bottom: 60px;
+    max-width: max-content;
+  }
+}
+
+.templates-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #f1f5f9;
+  max-width: 311px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: max-content;
+    margin-bottom: 80px;
+  }
+}
+
+.templates-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+}
+
+.templates-list-item {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  padding: 4px 0;
+  width: 100%;
+  max-width: 311px;
+  min-height: 140px;
+  background: linear-gradient(rgba(14, 203, 175, 0.1), rgba(14, 203, 175, 0.1))
+      padding-box,
+    linear-gradient(#020409, #020409) padding-box,
+    linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%) border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    justify-content: start;
+    max-width: 519px;
+    min-height: 300px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+}
+
+.templates-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #f0f1f1;
+  max-width: 287px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    font-size: 36px;
+    max-width: 479px;
+  }
+}
+
+.templates-btn {
+  border-radius: 20px;
+  padding: 18px 0;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #bbbdc0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #0b132b 0%, #000 100%) padding-box,
+    linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%) border-box;
+  border: 1px solid transparent;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: 1062px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

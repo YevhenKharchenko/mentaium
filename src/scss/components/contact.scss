@@ -1,0 +1,176 @@
+.contact-section {
+  padding-bottom: 100px;
+
+  @include media(desktop) {
+    padding-bottom: 200px;
+  }
+}
+
+.contact-pic-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+  }
+}
+
+.contact-img {
+}
+
+.contact-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.55526;
+  text-align: center;
+  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+}
+
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  color: #f0f1f1;
+  margin-bottom: 14px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    text-align: left;
+    max-width: 628px;
+    margin-bottom: 40px;
+  }
+}
+
+.contact-email-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    gap: 40px;
+    margin-bottom: 24px;
+  }
+}
+
+.contact-email-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-email-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-email-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #f0f1f1;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-email-icon {
+  @include media(desktop) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.contact-company-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+.contact-company-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-company-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #f0f1f1;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-get-btn {
+  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
+  border-radius: 20px;
+  padding: 18px 0px;
+  width: 100%;
+  max-width: 311px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: 628px;
+  }
+}
