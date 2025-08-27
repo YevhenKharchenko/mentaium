@@ -23,7 +23,12 @@
 .footer-nav {
   padding-bottom: 16px;
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(90deg, #ffe098 0%, #fd7765 47.12%, #fff 100%);
+  border-image: linear-gradient(
+    90deg,
+    #ffe098 0%,
+    #fd7765 47.12%,
+    #fbfbfb 100%
+  );
   border-image-slice: 1;
 
   @include media(desktop) {
