@@ -1,0 +1,162 @@
+.patterns-section {
+}
+
+.patterns-section-wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    max-width: 1440px;
+  }
+}
+
+.patterns-container {
+  padding: 0;
+}
+
+.patterns-title {
+}
+
+.patterns-subtitle {
+}
+
+.patterns-list-wrapper {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.patterns-list-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000;
+
+  @include media(desktop) {
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.patterns-list {
+  list-style-type: disc;
+  padding-left: 20px;
+
+  @include media(desktop) {
+    color: #fff;
+  }
+}
+
+.patterns-list-item {
+}
+
+.patterns-item-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000;
+
+  @include media(desktop) {
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.patterns-slider-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fd7765;
+  margin-bottom: 24px;
+}
+
+.patterns-swiper-container {
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1096px;
+  }
+}
+
+.patterns-swiper-container.show {
+  visibility: visible;
+}
+
+.patterns-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    min-height: 375px;
+    position: relative;
+  }
+}
+
+.patterns-slide {
+  border: 1px solid #fd7765;
+  padding: 4px;
+  max-width: 343px;
+  min-height: 352px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    &:nth-child(1) {
+    }
+  }
+}
+
+.patterns-slide-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #000;
+
+  @include media(desktop) {
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.patterns-dot {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+.patterns-dot.active {
+  width: 22px;
+  height: 12px;
+  background-color: #fd7765;
+}
