@@ -1,47 +1,31 @@
 .header {
-  backdrop-filter: blur(54.20000076293945px);
-  background: rgba(46, 46, 46, 0.4);
-  padding-top: 15px;
-  padding-bottom: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(90deg, #ffe098 0%, #fd7765 47.12%, #283544 100%);
+  border-bottom: 1px solid #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
-    background: linear-gradient(180deg, #0b132b 0%, #000 100%);
-    padding-top: 26px;
-    padding-bottom: 0;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
 .header-container {
 }
 
-.header-bg-wrapper {
-  @include media(desktop) {
-    padding-top: 14px;
-    background-image: url(../img/hero/hero-bg-desk.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: auto;
-  }
-}
-
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
 
   @include media(desktop) {
     justify-content: start;
     gap: 54px;
-  }
-}
-
-.header-logo-link {
-  @include media(desktop) {
-    margin-left: 24px;
   }
 }
 
@@ -50,10 +34,10 @@
 
   @include media(desktop) {
     width: 100%;
-    max-width: 978px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 32px;
   }
 }
 
@@ -61,21 +45,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-family: 'DM Serif Text', sans-serif;
+  font-weight: 400;
   font-size: 20px;
-  text-align: center;
-  color: #f1f5f9;
+  line-height: 1.5;
+  color: #000;
   transition: all 0.3s ease-in-out;
 
   &:hover,
   &.active {
-    color: #0ecbaf;
+    color: #fff;
   }
 }
 
 .nav-list-link.active {
-  color: #0ecbaf;
+  color: #fff;
 }
 
 .nav-btn {

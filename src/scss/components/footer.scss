@@ -1,78 +1,62 @@
 .footer {
-  background: linear-gradient(180deg, #000 0%, #0b132b 100%);
+  background: #283544;
+  padding: 24px 0;
+
+  @include media(desktop) {
+    padding: 40px 0;
+  }
 }
 
 .footer-container {
-  @include media(desktop) {
-  }
-}
-
-.footer-top-wrapper {
-  padding-top: 32px;
-  padding-bottom: 45px;
+  padding: 0 10px;
 
   @include media(desktop) {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    position: relative;
-  }
-}
-
-.footer-bottom-wrapper {
-  border-top: 2px solid #0dcaae;
-  padding-top: 31px;
-  padding-bottom: 30px;
-
-  @include media(desktop) {
-    padding-top: 40px;
-    padding-bottom: 116px;
-  }
-}
-
-.footer-logo-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 24px;
-
-  @include media(desktop) {
-    margin-bottom: 40px;
+    padding: 0 80px;
   }
 }
 
 .footer-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
+  @include media(desktop) {
+  }
+}
+
+.footer-nav {
+  padding-bottom: 16px;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg, #ffe098 0%, #fd7765 47.12%, #fff 100%);
+  border-image-slice: 1;
 
   @include media(desktop) {
-    flex-direction: row-reverse;
-    justify-content: start;
-    gap: 41px;
+    padding-bottom: 40px;
   }
 }
 
 .footer-list {
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 16px;
+  max-width: 210px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    flex-direction: row;
-    gap: 80px;
+    gap: 36px;
+    max-width: max-content;
   }
 }
 
 .footer-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Serif Text', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  color: #f0f1f1;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fd7765;
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   &:hover,
@@ -80,83 +64,55 @@
   }
 }
 
-.footer-privacy-list {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 24px;
+.footer-bottom-wrapper {
+  padding-top: 16px;
 
   @include media(desktop) {
-    width: 193px;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.footer-privacy-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 0;
   }
 }
 
 .footer-privacy-link {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
   font-size: 14px;
-  color: #f0f1f1;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 20px;
-  }
-}
-
-.footer-email-wrapper {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 40px;
-
-  @include media(desktop) {
-    position: absolute;
-    top: 179px;
-    right: 127px;
-  }
-}
-
-.footer-email-text-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include media(desktop) {
-  }
-}
-
-.footer-email-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  background: linear-gradient(180deg, #0ecbaf 0%, rgba(14, 203, 175, 0.1) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  @include media(desktop) {
-    font-size: 18px;
-  }
-}
-
-.footer-email-link {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  color: #f0f1f1;
-
-  @include media(desktop) {
-    font-size: 18px;
   }
 }
 
 .footer-bottom-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 12px;
+  line-height: 1.5;
   text-align: center;
-  color: #f0f1f1;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
