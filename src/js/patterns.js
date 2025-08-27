@@ -21,7 +21,7 @@ patternsSwiper = new Swiper('.patterns-swiper-container', {
   },
   breakpoints: {
     1440: {
-      slidesPerView: 4,
+      slidesPerView: 5,
       grabCursor: false,
       allowTouchMove: false,
       spaceBetween: 0,
@@ -34,12 +34,12 @@ patternsSwiper = new Swiper('.patterns-swiper-container', {
         .classList.add('show');
     },
     slideChange: function () {
-      updatepatternsDots(this.realIndex);
+      updatePatternsDots(this.realIndex);
     },
   },
 });
 
-function updatepatternsDots(index) {
+function updatePatternsDots(index) {
   patternsDots.forEach((dot, i) => {
     dot.classList.toggle('active', i === index);
   });
