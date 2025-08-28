@@ -1,0 +1,344 @@
+.submissions-section {
+  background: #283544;
+}
+
+.submissions-bg-wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/glossary/glossary-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 1440px;
+    background-image: url(../img/submissions/submissions-bg-desk.jpg);
+  }
+}
+
+.submissions-container {
+  padding: 0 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.submissions-title {
+  color: #fff;
+}
+
+.submissions-subtitle {
+  color: #fff;
+}
+
+.submissions-list-wrapper {
+  @include media(desktop) {
+    max-width: 422px;
+  }
+}
+
+.submissions-list-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.submissions-list {
+  list-style-type: disc;
+  padding-left: 30px;
+
+  @include media(desktop) {
+    padding-left: 35px;
+  }
+}
+
+.submissions-list-item {
+  color: #fff;
+}
+
+.submissions-list-item-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.submissions-form {
+  background: rgba(41, 57, 75, 0.3);
+  padding: 8px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.submissions-label-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  position: relative;
+}
+
+.submissions-form-label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
+  @include media(desktop) {
+    max-width: 386px;
+    width: 100%;
+  }
+}
+
+.submissions-label-span {
+  color: #fd7765;
+}
+
+.submissions-form-input {
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    #ffe098 0%,
+    #fd7765 47.12%,
+    #fbfbfb 100%
+  );
+  border-image-slice: 1;
+  padding: 12px;
+  background-color: transparent;
+  color: #fff;
+  outline: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 48px;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    max-width: 386px;
+    width: 100%;
+  }
+}
+
+.submissions-form-input:focus {
+}
+
+.submissions-form-input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #a7a7a7;
+}
+
+.submissions-email-input {
+  padding-left: 48px;
+}
+
+.card-icon {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+}
+
+.help-icon {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+
+.submissions-textarea {
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    #ffe098 0%,
+    #fd7765 47.12%,
+    #fbfbfb 100%
+  );
+  border-image-slice: 1;
+  padding: 12px;
+  background-color: transparent;
+  color: #fff;
+  outline: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    max-width: 386px;
+    width: 100%;
+  }
+}
+
+.submissions-textarea::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #a7a7a7;
+}
+
+.submissions-textarea-counter {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.submissions-textarea-counter.warning {
+  color: #fd7765;
+}
+
+.submissions-label-wrapper {
+}
+
+.file-label-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.submissions-form-file-label {
+  background: #ffe098;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  border: 2px dashed transparent;
+  border-image: linear-gradient(
+    90deg,
+    #ffe098 0%,
+    #fd7765 47.12%,
+    #fbfbfb 100%
+  );
+  border-image-slice: 1;
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  text-align: center;
+  color: #a7a7a7;
+  transition: all 0.3s ease-in-out;
+}
+
+.submissions-form-file-label:hover {
+}
+
+.file-label-text {
+}
+
+.camera-icon {
+}
+
+.submissions-form-btn {
+  background: #002eb0;
+  border-radius: 32px;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: max-content;
+  width: 100%;
+
+  @include media(desktop) {
+    padding: 20px 40px;
+  }
+}
+
+.submissions-form-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.submissions-form-cancel-btn {
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.submissions-form-save-btn {
+  background: #fd7765;
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.modal-form {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #222221;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-form.show {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.submissions-bottom-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fd7765;
+}
+
+.submissions-bottom-span {
+  font-weight: 700;
+}
