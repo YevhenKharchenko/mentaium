@@ -22,9 +22,29 @@
 }
 
 .submissions-container {
-  padding: 0 8px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding: 0;
+
+  @include media(desktop) {
+    padding: 0 40px;
+  }
+}
+
+.submissions-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+}
+
+.submissions-top-wrapper {
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @include media(desktop) {
+    padding: 0;
+    max-width: 729px;
+  }
 }
 
 .submissions-title {
@@ -33,11 +53,14 @@
 
 .submissions-subtitle {
   color: #fff;
+
+  @include media(desktop) {
+    max-width: 667px;
+  }
 }
 
 .submissions-list-wrapper {
   @include media(desktop) {
-    max-width: 422px;
   }
 }
 
@@ -59,7 +82,7 @@
   padding-left: 30px;
 
   @include media(desktop) {
-    padding-left: 35px;
+    margin-bottom: 24px;
   }
 }
 
@@ -80,6 +103,20 @@
   }
 }
 
+.submissions-form-wrapper {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+
+  @include media(desktop) {
+    padding: 0;
+    margin: 0;
+    max-width: 592px;
+  }
+}
+
 .submissions-form {
   background: rgba(41, 57, 75, 0.3);
   padding: 8px 15px;
@@ -87,6 +124,11 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+
+  @include media(desktop) {
+    padding: 16px;
+    gap: 24px;
+  }
 }
 
 .submissions-label-wrapper {
@@ -105,8 +147,6 @@
   color: #fff;
 
   @include media(desktop) {
-    max-width: 386px;
-    width: 100%;
   }
 }
 
@@ -135,8 +175,6 @@
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    max-width: 386px;
-    width: 100%;
   }
 }
 
@@ -153,6 +191,26 @@
 
 .submissions-email-input {
   padding-left: 48px;
+}
+
+.tooltip-text {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #222221;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.help-icon:hover + .tooltip-text,
+.help-icon:focus + .tooltip-text {
+  display: block;
 }
 
 .card-icon {
@@ -187,8 +245,6 @@
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    max-width: 386px;
-    width: 100%;
   }
 }
 
@@ -258,25 +314,6 @@
 .camera-icon {
 }
 
-.submissions-form-btn {
-  background: #002eb0;
-  border-radius: 32px;
-  padding: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: max-content;
-  width: 100%;
-
-  @include media(desktop) {
-    padding: 20px 40px;
-  }
-}
-
 .submissions-form-btn-wrapper {
   display: flex;
   justify-content: center;
@@ -330,6 +367,15 @@
   display: none;
 }
 
+.submissions-bottom-wrapper {
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
 .submissions-bottom-text {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 500;
@@ -341,4 +387,18 @@
 
 .submissions-bottom-span {
   font-weight: 700;
+}
+
+.submissions-bottom-text-desk {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #fd7765;
+  }
 }
