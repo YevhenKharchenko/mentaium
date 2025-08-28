@@ -196,16 +196,15 @@
 .tooltip-text {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  right: 0;
   background-color: #222221;
   color: #fff;
   padding: 6px 10px;
   border-radius: 4px;
   font-size: 14px;
-  white-space: nowrap;
   z-index: 10;
+  max-width: 300px;
 }
 
 .help-icon:hover + .tooltip-text,

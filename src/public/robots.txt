@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://idleka.site/sitemap.xml
+Sitemap: https://mentaium.space/sitemap.xml
